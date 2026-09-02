@@ -74,14 +74,14 @@ A continuación se presentan los comandos más utilizados para generar módulos 
 
 #### Ejemplo:
 
-```ng g m modules/users --routing```
+```ng g m modules/example --routing```
 
 #### Archivos Generados
 
 ```
-src/app/modules/users
-├──users.module.ts
-└──users-routing.module.ts
+src/app/modules/example
+├──example.module.ts
+└──example-routing.module.ts
 ```
 
 ### 🧩 Generar un componente (con carpeta propia)
@@ -90,16 +90,16 @@ src/app/modules/users
 
 #### Ejemplo:
 
-```ng g c modules/users/components/table-users --standalone=false```
+```ng g c modules/example/components/example-table --standalone=false```
 
 #### Archivos Generados
 
 ```
-src/app/modules/users/components/table-users/
-├── table-users.html
-├── table-users.scss
-├── table-users.spec.ts
-└── table-users.ts
+src/app/modules/example/components/example-table/
+├── example-table.html
+├── example-table.scss
+├── example-table.spec.ts
+└── example-table.ts
 ```
 
 ### 📄 Generar un componente sin carpeta (--flat)
@@ -108,16 +108,16 @@ src/app/modules/users/components/table-users/
 
 #### Ejemplo:
 
-```ng g c modules/users/components/table-users/table-users.component --standalone=false --flat```
+```ng g c modules/example/components/example-table/example-table.component --standalone=false --flat```
 
 #### Archivos Generados
 
 ```
-src/app/modules/users/components/table-users/
-├──table-users.component.html
-├──table-users.component.scss
-├──table-users.component.spec.ts
-└──table-users.component.ts
+src/app/modules/example/components/example-table/
+├──example-table.component.html
+├──example-table.component.scss
+├──example-table.component.spec.ts
+└──example-table.component.ts
 ```
 
 ### 🎓 Observaciones Importantes
