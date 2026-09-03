@@ -9,4 +9,8 @@ export interface Concept {
   title: string;
   /** Explicación breve, en palabras propias */
   summary: string;
+  /** URL de la imagen que acompaña el concepto */
+  imageUrl: string;
+  /** Descripción accesible de la imagen */
+  imageAlt: string;
 }
