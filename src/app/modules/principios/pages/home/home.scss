@@ -1,0 +1,64 @@
+.module-page {
+	--principios-ink: #182236;
+	--principios-muted: #687386;
+	--principios-blue: #1769ff;
+	--principios-paper: #f7f9fc;
+	--principios-line: #dbe4f0;
+}
+
+.module-page {
+	max-width: 1120px;
+	margin: 0 auto;
+	padding: 4.5rem 2rem 5rem;
+	color: var(--principios-ink);
+	background: var(--principios-paper);
+
+	&__header {
+		padding: 4rem 2rem 4.25rem;
+	}
+
+	&__header-copy {
+		max-width: 720px;
+		margin: 0 auto;
+		text-align: left;
+	}
+
+	h1 {
+		max-width: 720px;
+		margin: 0 0 1rem;
+		font-family: 'Trebuchet MS', Arial, sans-serif;
+		font-size: 2.35rem;
+		font-weight: 500;
+		line-height: 1.15;
+		letter-spacing: 0;
+	}
+
+	&__intro {
+		max-width: 540px;
+		margin: 0;
+		color: var(--principios-muted);
+		font-family: 'Trebuchet MS', sans-serif;
+		font-size: 1rem;
+		line-height: 1.75;
+	}
+
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 1.25rem;
+	}
+}
+
+@media (max-width: 720px) {
+	.module-page {
+		padding: 3rem 1.25rem 4rem;
+
+		&__header {
+			padding: 2.5rem 0 3.25rem;
+		}
+
+		&__list {
+			grid-template-columns: 1fr;
+		}
+	}
+}

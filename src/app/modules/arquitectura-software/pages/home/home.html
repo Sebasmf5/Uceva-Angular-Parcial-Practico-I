@@ -1,0 +1,17 @@
+<main class="module-page">
+	<header class="module-page__header">
+		<span class="module-page__eyebrow">MÓDULO</span>
+		<h1>Arquitectura de Software</h1>
+		<p>
+			Conceptos fundamentales sobre estructura, calidad, negocio y decisiones técnicas de software.
+		</p>
+	</header>
+
+	<section class="module-page__grid" aria-label="Conceptos de arquitectura de software">
+		<app-concept-card
+			*ngFor="let concept of concepts; let i = index"
+			[concept]="concept"
+			[index]="i + 1">
+		</app-concept-card>
+	</section>
+</main>

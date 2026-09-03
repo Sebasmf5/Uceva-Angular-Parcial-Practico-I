@@ -1,0 +1,14 @@
+<article class="concept-card">
+	<img
+		class="concept-card__image"
+		[src]="concept.imageUrl"
+		[alt]="concept.title"
+		width="800"
+		height="450" />
+
+	<div class="concept-card__body">
+		<span class="concept-card__label">{{ concept.category }}</span>
+		<h3 class="concept-card__title">{{ concept.title }}</h3>
+		<p class="concept-card__summary">{{ concept.summary }}</p>
+	</div>
+</article>

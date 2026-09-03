@@ -1,0 +1,24 @@
+<section class="module-page">
+  <div class="module-page__banner">
+    <img
+      src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=1200&h=300&q=80"
+      alt="Banner del módulo Sistemas de Diseño"
+      width="1200"
+      height="300"
+    />
+    <h1 class="module-page__banner-title">Sistemas de Diseño</h1>
+  </div>
+
+  <p class="module-page__intro">
+    Resumen de qué es un sistema de diseño, por qué se usa y cómo se organiza mediante la
+    metodología de Diseño Atómico.
+  </p>
+
+  <div class="module-page__list">
+    <app-concept-card
+      *ngFor="let concept of concepts; let i = index"
+      [concept]="concept"
+      [index]="i + 1"
+    ></app-concept-card>
+  </div>
+</section>
