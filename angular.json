@@ -83,7 +83,6 @@
     }
   },
   "cli": {
-
     "analytics": false
   }
 }
