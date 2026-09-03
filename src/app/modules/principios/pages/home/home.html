@@ -1,0 +1,18 @@
+<section class="module-page">
+	<header class="module-page__header">
+		<div class="module-page__header-copy">
+			<h1>Principios de la Arquitectura de Software</h1>
+			<p class="module-page__intro">
+				Ideas esenciales para construir sistemas claros, mantenibles y preparados para crecer.
+			</p>
+		</div>
+	</header>
+
+	<div class="module-page__list">
+		<app-concept-card
+			*ngFor="let concept of concepts; let i = index"
+			[concept]="concept"
+			[index]="i + 1">
+		</app-concept-card>
+	</div>
+</section>

@@ -1,0 +1,37 @@
+.concept-card {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  background-color: #ffffff;
+  border-radius: 14px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  margin-bottom: 1rem;
+
+  &__badge {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    background-color: #eef2ff;
+    color: #4f46e5;
+    font-weight: 700;
+  }
+
+  &__title {
+    margin: 0 0 0.35rem;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #111827;
+  }
+
+  &__summary {
+    margin: 0;
+    font-size: 0.92rem;
+    line-height: 1.45;
+    color: #4b5563;
+  }
+}
