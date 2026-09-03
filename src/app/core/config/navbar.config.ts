@@ -15,7 +15,12 @@ import { NavbarItem } from "../../modules/shared/interfaces/navbar.interface";
  */
 export const NAVBAR_ITEMS: NavbarItem[] = [
 	{
+
 		label: 'Principios',
 		url: '/principios',
 	},
-];
+	{
+		label: 'Sistemas de Diseño',
+		url: '/sistemas-diseno',
+	},
+] 
