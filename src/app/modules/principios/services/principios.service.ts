@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Observable, of } from 'rxjs';
 import { Concept } from '../interfaces/concept.interface';
 import { PRINCIPIOS_CONFIG } from '../../../core/config/principios.config';
 
@@ -11,7 +12,7 @@ export class PrincipiosService {
   /**
    * Retorna los conceptos clave del tema.
    */
-  getConcepts(): Concept[] {
-    return PRINCIPIOS_CONFIG;
+  getConcepts(): Observable<Concept[]> {
+    return of(PRINCIPIOS_CONFIG);
   }
 }

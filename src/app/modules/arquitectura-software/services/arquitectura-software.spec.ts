@@ -1,16 +1,22 @@
 import { TestBed } from '@angular/core/testing';
 
-import { ArquitecturaSoftware } from './arquitectura-software';
+import { ArquitecturaSoftwareService } from './arquitectura-software';
 
-describe('ArquitecturaSoftware', () => {
-  let service: ArquitecturaSoftware;
+describe('ArquitecturaSoftwareService', () => {
+  let service: ArquitecturaSoftwareService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(ArquitecturaSoftware);
+    service = TestBed.inject(ArquitecturaSoftwareService);
   });
 
   it('should be created', () => {
     expect(service).toBeTruthy();
+  });
+
+  it('should emit the architecture concepts', () => {
+    service.getConcepts().subscribe((concepts) => {
+      expect(concepts.length).toBeGreaterThan(0);
+    });
   });
 });

@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Observable, of } from 'rxjs';
 import { SISTEMAS_DISENO_CONFIG } from '../../../core/config/sistemas-diseno.config';
 import { Concept } from '../interfaces/concept.interface';
 
@@ -13,7 +14,7 @@ export class SistemasDisenoService {
   /**
    * Retorna los conceptos clave del tema.
    */
-  getConcepts(): Concept[] {
-    return SISTEMAS_DISENO_CONFIG;
+  getConcepts(): Observable<Concept[]> {
+    return of(SISTEMAS_DISENO_CONFIG);
   }
 }

@@ -24,6 +24,13 @@ export class HomeComponent implements OnInit {
 
   /** Carga los conceptos cuando se inicializa la página. */
   ngOnInit(): void {
-    this.concepts = this.arquitecturaSoftwareService.getConcepts();
-  }
+    this.arquitecturaSoftwareService.getConcepts().subscribe({
+      next: (concepts) => {
+        this.concepts = concepts;
+      },
+      error: () => {
+        this.concepts = [];
+      },
+    });
+    }
 }
