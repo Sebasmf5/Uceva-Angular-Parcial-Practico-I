@@ -16,9 +16,18 @@ export class HomeComponent implements OnInit {
   /** Conceptos a mostrar en la página */
   concepts: Concept[] = [];
 
+  /** Obtiene el servicio que proporciona los conceptos del módulo. */
   constructor(private sistemasDisenoService: SistemasDisenoService) {}
 
+  /** Carga los conceptos al inicializar la página. */
   ngOnInit(): void {
-    this.concepts = this.sistemasDisenoService.getConcepts();
+    this.sistemasDisenoService.getConcepts().subscribe({
+      next: (concepts) => {
+        this.concepts = concepts;
+      },
+      error: () => {
+        this.concepts = [];
+      },
+    });
   }
 }

@@ -20,6 +20,13 @@ export class Home implements OnInit {
 
   /** Carga los conceptos al inicializar la página. */
   ngOnInit(): void {
-    this.concepts = this.principiosService.getConcepts();
+    this.principiosService.getConcepts().subscribe({
+      next: (concepts) => {
+        this.concepts = concepts;
+      },
+      error: () => {
+        this.concepts = [];
+      },
+    });
   }
 }

@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Observable, of } from 'rxjs';
 import { Concept } from '../interface/concept.interface';
 import { ARQUITECTURA_SOFTWARE_CONFIG } from '../../../core/config/arquitectura-software.config';
 
@@ -11,7 +12,7 @@ export class ArquitecturaSoftwareService {
   /**
    * Retorna los conceptos clave del tema.
    */
-  getConcepts(): Concept[] {
-    return ARQUITECTURA_SOFTWARE_CONFIG;
+  getConcepts(): Observable<Concept[]> {
+    return of(ARQUITECTURA_SOFTWARE_CONFIG);
   }
 }
