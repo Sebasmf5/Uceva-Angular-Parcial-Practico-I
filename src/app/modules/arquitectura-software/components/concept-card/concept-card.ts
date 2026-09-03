@@ -7,6 +7,7 @@ import { Concept } from '../../interface/concept.interface';
   selector: 'app-concept-card',
   templateUrl: './concept-card.html',
   styleUrls: ['./concept-card.scss'],
+  standalone: false,
 })
 export class ConceptCardComponent {
   /** Concepto a renderizar en la tarjeta */

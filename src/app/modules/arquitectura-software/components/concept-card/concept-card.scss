@@ -8,8 +8,9 @@
 	&__image {
 		display: block;
 		width: 100%;
-		aspect-ratio: 16 / 9;
-		object-fit: cover;
+		height: 160px;
+		object-fit: contain;
+		background: #eaf1ff;
 	}
 
 	&__body {
@@ -38,5 +39,11 @@
 		color: #5c687c;
 		font-size: 0.9rem;
 		line-height: 1.55;
+	}
+}
+
+@media (max-width: 600px) {
+	.concept-card__image {
+		height: 140px;
 	}
 }
