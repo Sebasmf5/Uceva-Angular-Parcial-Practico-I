@@ -3,6 +3,7 @@ import { NgModule, provideBrowserGlobalErrorListeners } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing-module';
 import { AppComponent } from './app.component';
+import { SistemasDisenoModule } from './modules/sistemas-diseno/sistemas-diseno.module';
 import { SharedModule } from './modules/shared/shared-module';
 
 @NgModule({
@@ -11,9 +12,9 @@ import { SharedModule } from './modules/shared/shared-module';
   ],
   imports: [
     SharedModule,
-    CommonModule,
     BrowserModule,
     AppRoutingModule,
+    SistemasDisenoModule,
   ],
   providers: [
     provideBrowserGlobalErrorListeners()
