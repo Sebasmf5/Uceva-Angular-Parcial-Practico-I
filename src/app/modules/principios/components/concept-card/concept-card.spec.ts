@@ -14,6 +14,13 @@ describe('ConceptCard', () => {
 
     fixture = TestBed.createComponent(ConceptCard);
     component = fixture.componentInstance;
+    component.concept = {
+      id: 1,
+      title: 'Principio de prueba',
+      summary: 'Resumen de prueba',
+      imageUrl: 'test-image.jpg',
+      imageAlt: 'Imagen de prueba',
+    };
     fixture.detectChanges();
   });
 
